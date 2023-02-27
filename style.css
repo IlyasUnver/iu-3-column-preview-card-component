@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@400;700&family=Lora&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&family=Lora&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    max-width: 1440px;
+    text-decoration: none;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+body{
+    background-color: antiquewhite;
+}
+
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: row;
+    height: 400px;
+    width: 800px;
+}
+
+.sedan{
+    background-color: hsl(31, 77%, 52%);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.sedanContainer{
+    margin: 30px;
+    padding: 15px;
+}
+
+.suv{
+    background-color: hsl(184, 100%, 22%);
+}
+
+.suvContainer{
+    margin: 30px;
+    padding: 15px;
+}
+
+.luxury{
+    background-color: hsl(179, 100%, 13%);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.luxuryContainer{
+    margin: 30px;
+    padding: 15px;
+}
+
+.attribution{
+    position: absolute;
+    top: 75%;
+    right: 50%;
+    transform: translate(50%, 50%);
+}
+
+
+img{
+    padding-bottom:20px ;
+}
+
+h2{
+    padding-bottom: 35px;
+    color: white;
+    font-size:xx-large;
+    font-family: 'Big Shoulders Display', cursive;
+}
+
+p{
+    color: white;
+    padding-bottom: 67px;
+    font-size: 13px;
+}
+
+.a1{
+    color: hsl(31, 77%, 52%);
+    background-color: white;
+    padding: 10px 19px;
+    font-size: 13px;
+    border-radius: 50px;
+    border-color: white;
+}
+
+.a2{
+    color: hsl(184, 100%, 22%);
+    background-color: white;
+    padding: 10px 19px;
+    font-size: 13px;
+    border-radius: 50px;
+    border-color: white;
+}
+
+.a3{
+    color: hsl(179, 100%, 13%);
+    background-color: white;
+    padding: 10px 19px;
+    font-size: 13px;
+    border-radius: 50px;
+    border-color: white;
+}
+
+.a1:hover{
+    background-color:hsl(31, 77%, 52%);
+    color: white;
+    border: 2px solid white;
+}
+
+.a2:hover{
+    background-color:hsl(184, 100%, 22%);
+    color: white;
+    border: 2px solid white;
+}
+
+.a3:hover{
+    background-color: hsl(179, 100%, 13%);
+    color: white;
+    border: 2px solid white;
+}
+
+@media only screen and (max-width:850px){
+    .container{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .attribution{
+        position: absolute;
+        top: 1080px;
+        text-align: center;
+    }
+
+}
+
+@media only screen and (max-width:550px){
+    .container{
+        display: flex;
+        flex-direction: column;
+        width: 330px;
+        margin-top: 15px;
+        overflow-x: hidden;
+
+    }
+    .attribution{
+        position: absolute;
+        top: 100%;
+        text-align: center;
+    }
+    .sedan{
+        border-top-right-radius: 5px;
+        border-top-left-radius: 5px;
+    }
+
+    .luxury{
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
